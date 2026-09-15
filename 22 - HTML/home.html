@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        h2{
+            color: red;
+            font-size: 100px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+    </style>
+</head>
+<body>
+    <h2>Página Inicial</h2>
+
+    <h4>seja Bem Vindo, {{ .Nome }}</h4>
+
+    <button type="button" id="botao">Clique em mim!</button>
+
+    <h6>{{ .Email }}</h6>
+
+    <script>
+
+        var botao = document.getElementById("botao")
+
+        botao.onclick = function(){
+            alert("Botão CLicado com sucesso")
+        }
+
+    </script>
+
+</body>
+</html>
