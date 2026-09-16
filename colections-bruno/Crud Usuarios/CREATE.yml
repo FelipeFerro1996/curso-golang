@@ -1,0 +1,23 @@
+info:
+  name: CREATE
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: localhost:5000/usuarios
+  body:
+    type: json
+    data: |-
+      {
+        "nome": "Pedro",
+        "email": "felipepedro@gmail.com"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false
