@@ -1,0 +1,23 @@
+info:
+  name: UPDATE
+  type: http
+  seq: 4
+
+http:
+  method: PUT
+  url: localhost:5000/usuarios/1
+  body:
+    type: json
+    data: |-
+      {
+        "nome": "João Pedro",
+        "email": "joao.pedro.alterado@email.com"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false
