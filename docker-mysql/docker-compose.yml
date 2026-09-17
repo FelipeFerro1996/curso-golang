@@ -1,7 +1,7 @@
 services:
   mysql:
     image: mysql:8.4
-    container_name: curso-go-mysql
+    container_name: curso_devbook_go
     restart: unless-stopped
 
     environment:
